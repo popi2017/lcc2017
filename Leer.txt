@@ -1,0 +1,3 @@
+*-Ejecutar la Plataforma mediante el archivo en startPopi.bat (es necesario tener instalado el jdk en)
+*-En ambas apps se debe configurar que se conecten a la red donde se esta ejecutando la Plataforma
+*-Primero se debe lanzar la App Resto y luego la App Comensal
