@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/loginresto00" 
+	android:gravity="center"
+	android:weightSum="1">
+
+    	
+<!-- 	<TextView  -->
+<!-- 	    android:layout_width="fill_parent" -->
+<!-- 		android:layout_height="wrap_content"  -->
+<!-- 		android:textSize="20sp" -->
+<!-- 		android:text="@string/label_nick" /> -->
+
+<!-- <TextView  -->
+<!--     android:layout_width="fill_parent" -->
+<!--     android:layout_height="wrap_content" -->
+<!--     android:textColor="@color/blanco" -->
+<!--     android:text="Menus:" -->
+<!--         android:layout_marginTop="80dp" -->
+<!--     android:textSize="18sp"/> -->
+<!-- <EditText  -->
+<!--     android:id="@+id/etPrecioMenu" -->
+<!--     android:layout_width="fill_parent" -->
+<!--     android:layout_height="wrap_content" -->
+<!--     android:inputType="number" -->
+<!--     android:hint="Precio del menu" -->
+<!--     android:textSize="12sp"/> -->
+
+<!-- 	<LinearLayout  -->
+<!--     	android:orientation="horizontal" -->
+<!--         android:weightSum="20" -->
+<!-- 		android:layout_marginLeft="6dp" -->
+<!-- 		android:layout_marginRight="0dp" -->
+<!-- 		android:layout_marginBottom="20dp" -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="wrap_content"> -->
+	    
+<!-- 	                <CheckBox -->
+<!--         		android:id="@+id/checkBoxVegetariano" -->
+<!--         		android:layout_width="fill_parent" -->
+<!--         		android:layout_height="wrap_content" -->
+<!--         		android:textColor="@color/negro" -->
+<!--         		android:textSize="11sp" -->
+<!--         		android:layout_weight="5" -->
+<!--         		android:text="Vegetariano" /> -->
+	                
+<!-- 	                            <CheckBox -->
+<!--         		android:id="@+id/checkBoxCarne" -->
+<!--         		android:layout_width="fill_parent" -->
+<!--         		android:layout_height="wrap_content" -->
+<!--         		android:textColor="@color/negro" -->
+<!--         		android:textSize="11sp" -->
+<!--         		android:layout_weight="5" -->
+<!--         		android:text="Carne" /> -->
+	                            
+	   
+	                                  
+	    
+<!-- 	                                  	                                        <CheckBox -->
+<!--         		android:id="@+id/checkBoxPizza" -->
+<!--         		android:layout_width="fill_parent" -->
+<!--         		android:layout_height="wrap_content" -->
+<!--         		android:textColor="@color/negro" -->
+<!--         		android:textSize="11sp" -->
+<!--         		android:layout_weight="5" -->
+<!--         		android:text="Pizza" /> -->
+	    
+
+	                                        	                                        
+<!-- 	                                                    <CheckBox -->
+<!--         		android:id="@+id/checkBoxPasta" -->
+<!--         		android:layout_width="fill_parent" -->
+<!--         		android:layout_height="wrap_content" -->
+<!--         		android:textColor="@color/negro" -->
+<!--         		android:textSize="11sp" -->
+<!--         		android:layout_weight="5" -->
+<!--         		android:text="Pastas" /> -->
+	          
+	                
+<!-- 	</LinearLayout> -->
+	<EditText 
+	    android:layout_height="60dp"
+		android:layout_width="360dp"
+		android:hint="@string/label_nick"
+		android:textColor="@color/gris_azulado" 
+		android:id="@+id/edit_nickname">
+		<requestFocus></requestFocus>
+	</EditText>
+	
+	<EditText 
+	    android:layout_height="60dp"
+		android:layout_width="360dp"
+		android:textColor="@color/gris_azulado"
+		android:hint="@string/label_password" 
+		android:id="@+id/edit_password"
+		android:visibility="gone"
+		android:inputType="textPassword">
+		<requestFocus></requestFocus>
+	</EditText>
+	
+	<Button 
+	    android:layout_width="140dp"
+	    android:layout_height="60dp"
+		android:layout_gravity="center_horizontal" 
+		android:text="@string/button_login"
+		android:layout_marginTop="25dp"
+		android:textColor="@color/blanco"
+		android:background="@drawable/custom_button"
+		android:id="@+id/button_chat">
+	</Button>
+	
+	<TextView 
+	    android:layout_height="wrap_content" 
+	    android:id="@+id/infoTextView"
+		android:layout_width="wrap_content" 
+		android:layout_gravity="bottom"
+		android:text="info">
+	</TextView>
+	
+</LinearLayout>

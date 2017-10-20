@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:background="#ffffffff">
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:id="@+id/a"
+    android:gravity="center"
+    android:background="#e91e63"
+    android:src="@drawable/logowarningblanco"
+    android:scaleType="fitCenter" />
+
+
+<TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/text_dialog"
+    android:layout_below="@+id/a"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginBottom="0dp"
+    android:textSize="18sp"
+    android:textColor="#ff000000"
+    android:gravity="center_horizontal" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="5.0" >
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="60dp"
+    android:text="SI"
+    android:id="@+id/btn_dialog_si"
+    android:gravity="center_vertical|center_horizontal"
+    android:layout_marginBottom="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:src="@android:drawable/ic_delete"
+    android:layout_weight="5"
+    android:textColor="#ffffffff"
+    android:visibility="gone"
+    android:background="@drawable/custom_button_celestito" />
+
+<Button
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:text="Ok"
+    android:id="@+id/btn_dialog_no"
+    android:gravity="center_vertical|center_horizontal"
+    android:layout_marginBottom="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:src="@android:drawable/ic_delete"
+    android:layout_weight="5"
+	android:background="@drawable/custom_button_celestito"
+    android:textColor="#ffffffff" />
+
+</LinearLayout>
+</LinearLayout>

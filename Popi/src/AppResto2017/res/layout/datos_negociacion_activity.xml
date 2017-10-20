@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backlcc"
+    android:orientation="vertical" >
+
+
+    <ScrollView
+        android:id="@+id/scroller"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+ 
+<!--        		<TextView -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:textSize="18sp" -->
+<!--                 android:layout_marginTop="10dp" -->
+<!--                 android:textColor="@color/blanco" -->
+<!--                 android:visibility="gone" -->
+<!--                 android:text="Horario de la posible reserva:" /> -->
+        			           
+
+        			        			
+<!--         			<Button -->
+<!--             			android:id="@+id/btTime" -->
+<!--             			android:layout_width="fill_parent" -->
+<!--             			android:layout_height="50dp" -->
+<!--             			android:layout_marginLeft="5dp" -->
+<!--             			android:layout_marginRight="5dp" -->
+<!--             			android:drawableLeft="@drawable/logocalendarsm" -->
+<!--             			android:onClick="DoSetTime" -->
+<!--             			android:text="Seleccionar" -->
+<!--             			android:textColor="@color/blanco" -->
+<!--             			android:background="@drawable/custom_button_celestito" -->
+<!--             			android:layout_weight="10" -->
+<!--             			android:adjustViewBounds="true" -->
+<!--         				android:padding="5dp" -->
+<!--         				android:scaleType="fitCenter" -->
+<!--         				android:visibility="gone" -->
+<!--             			android:textSize="30sp" /> -->
+         
+                
+<TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/colorPrimarySoft"
+    android:text="Menus:"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+    android:textSize="18sp"/>
+
+	<LinearLayout 
+    	android:orientation="horizontal"
+        android:weightSum="10"
+		android:layout_marginLeft="66dp"
+		android:layout_marginRight="0dp"
+		android:layout_marginTop="10dp"
+		android:layout_marginBottom="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+	    
+	            <CheckBox
+        		android:id="@+id/checkBoxVegetariano"
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:textColor="@color/gris_azulado"
+        		android:textSize="14sp"
+        		android:layout_weight="5"
+        		android:checked="true"
+        		android:text="Vegetariano" />
+	                
+	            <CheckBox
+        		android:id="@+id/checkBoxCarne"
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:textColor="@color/gris_azulado"
+        		android:textSize="14sp"
+        		android:layout_weight="5"
+        		android:checked="true"
+        		android:text="Carne" />
+	                            
+	   
+</LinearLayout>	       
+
+		<LinearLayout 
+    	android:orientation="horizontal"
+        android:weightSum="10"
+		android:layout_marginLeft="66dp"
+		android:layout_marginRight="0dp"
+		android:layout_marginTop="10dp"
+		android:layout_marginBottom="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+	
+	    
+	                                  	                                        <CheckBox
+        		android:id="@+id/checkBoxPizza"
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:textColor="@color/gris_azulado"
+        		android:textSize="14sp"
+        		android:layout_weight="5"
+        		android:checked="true"
+        		android:text="Pizza" />
+	    
+
+	                                        	                                        
+	                                                    <CheckBox
+        		android:id="@+id/checkBoxPasta"
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:textColor="@color/gris_azulado"
+        		android:textSize="14sp"
+        		android:layout_weight="5"
+        		android:checked="true"
+        		android:text="Pastas" />
+	          
+	                
+	</LinearLayout>
+
+<TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/colorPrimarySoft"
+    android:text="Brindar estacionamiento Gratuito:"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+    android:textSize="18sp"/>
+				
+  <RadioGroup
+        android:id="@+id/radioGroupEstacionamientoGratuito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10"
+ 	 >
+
+        <RadioButton
+            android:id="@+id/rdEstacionmientoFree_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:layout_weight="5"
+            android:textColor="@color/gris_azulado"
+            android:text="Si" />
+
+        <RadioButton
+            android:id="@+id/rdEstacionmientoFree_00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:textColor="@color/gris_azulado"
+            android:text="No" />
+
+    
+    </RadioGroup>
+				
+		
+		
+<TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/colorPrimarySoft"
+    android:text="Dato sobre el tipo de comida:"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+    android:textSize="18sp"/>
+				
+  <RadioGroup
+        android:id="@+id/radioGroupTipoComida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="15"
+ 	 >
+
+        <RadioButton
+            android:id="@+id/rdTipoComida_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:layout_weight="5"
+            android:textColor="@color/gris_azulado"
+            android:text="Obligatorio" />
+
+        <RadioButton
+            android:id="@+id/rdTipoComida_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:textColor="@color/gris_azulado"
+            android:text="Preferible de tener" />
+
+        <RadioButton
+            android:id="@+id/rdTipoComida_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:textColor="@color/gris_azulado"
+            android:visibility="gone"
+            android:text="Indiferente" />
+    </RadioGroup>
+
+  
+  <TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/colorPrimarySoft"
+    android:text="Dato sobre el Barrio:"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="5dp"
+    android:textSize="18sp"/>
+				
+  <RadioGroup
+        android:id="@+id/radioGroupBarrio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="15"
+ 	 >
+
+        <RadioButton
+            android:id="@+id/rdBarrio_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:layout_weight="5"
+            android:textColor="@color/gris_azulado"
+            android:text="Obligatorio" />
+
+        <RadioButton
+            android:id="@+id/rdBarrio_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:textColor="@color/gris_azulado"
+            android:text="Preferible de tener" />
+
+        <RadioButton
+            android:id="@+id/rdBarrio_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:textColor="@color/gris_azulado"
+            android:text="Indiferente" />
+    </RadioGroup>
+  
+  
+  
+  <TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/colorPrimarySoft"
+    android:text="Dato sobre el estacionamiento:"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+    android:textSize="18sp"/>
+				
+  <RadioGroup
+        android:id="@+id/radioGroupEstacionamiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="15"
+ 	 >
+
+        <RadioButton
+            android:id="@+id/rdEstacionamiento_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:layout_weight="5"
+            android:textColor="@color/gris_azulado"
+            android:text="Obligatorio" />
+
+        <RadioButton
+            android:id="@+id/rdEstacionamiento_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:textColor="@color/gris_azulado"
+            android:text="Preferible de tener" />
+
+        <RadioButton
+            android:id="@+id/rdEstacionamiento_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:textColor="@color/gris_azulado"
+            android:text="Indiferente" />
+    </RadioGroup>
+    
+  
+  
+  
+  
+
+<TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/colorPrimarySoft"
+    android:text="Sucursal dar promoción:"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="0dp"
+    android:textSize="18sp"/>
+
+ <Spinner
+                android:id="@+id/spinnerSucursalPromo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:spinnerMode="dropdown" 
+                android:background="@drawable/spinner_v11"
+                />	                                        
+
+
+<TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/colorPrimarySoft"
+    android:text="En caso de no acuerdo:"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+    android:textSize="18sp"/>
+		                               
+
+            <TextView
+                android:id="@+id/labelTipoComida"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gris_azulado"
+                android:text=" %Descuento  en el precio:" />
+ <Spinner
+                android:id="@+id/spinnerDescPrecio"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:spinnerMode="dropdown" 
+                android:background="@drawable/spinner_v11"
+                />	                                        
+
+             <TextView
+                android:id="@+id/labelDarEstacion"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gris_azulado"
+                android:text="Conceder Estacionamiento:" />
+ <Spinner
+                android:id="@+id/spinnerEstacionamiento"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:spinnerMode="dropdown" 
+                android:background="@drawable/spinner_v11"
+                />	                                        
+ 	            
+ 
+ <EditText 
+    android:id="@+id/etPrecioMenu"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:layout_marginLeft="50dp"
+    android:layout_marginRight="50dp"
+    android:layout_marginBottom="15dp"
+    android:layout_marginTop="15dp"
+    android:inputType="number"
+	android:gravity="center"
+	android:background="@color/colorPrimarySoftTwo"
+	android:textColor="@color/gris_azulado"
+    android:hint="Ingrese el precio del menu"
+    android:textSize="14sp"/>
+ 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/btSiguiente"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/custom_button_celestito"
+        android:onClick="DoContinue"
+        android:src="@drawable/logoavanzargris"
+        android:adjustViewBounds="true"
+        android:padding="5dp"
+        android:scaleType="fitCenter"
+        android:text="Continuar" />
+</LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

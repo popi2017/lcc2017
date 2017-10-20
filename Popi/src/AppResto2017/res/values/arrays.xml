@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- ANALIZAR LUEGO COMO se una el spinnerBuilder del BaseActivity para poder crear mis propios Spinners -->
+    <string-array name="spinnerTipoComidaValues">
+        <item>0|[Seleccione Tipo De ComiDa]</item>
+        <item>1|Vegetariano</item>
+        <item>2|Carne</item>
+        <item>3|Pizza</item>
+        <item>4|Pastas</item>
+        <item>998|[Me da lo mismo cualquier tipo de plato]</item>
+    </string-array>
+
+        <string-array name="spinnerDescPrecioValues">
+  
+        <item>20|20</item>
+        <item>40|40 </item>
+        <item>50|50</item>
+        <item>60|60</item>
+        <item>75|75</item>
+        <item>0|[No aplicar descuento]</item>
+    </string-array>
+    
+    <string-array name="spinnerEstacionamientoValues">
+        <item>2|Si</item>
+        <item>1|No</item>	
+        
+    </string-array>
+
+        <string-array name="spinnerSucursalPromoValues">
+        <item>0|[Todas las sucursales]</item>
+        <item>1|Parque España</item>
+        <item>2|Centro</item>	
+        <item>3|Pichincha</item>
+        <item>4|Fluvial</item>
+        <item>5|Costanera</item>
+        <item>6|Zona Norte</item>
+        <item>7|Zona Sur</item>	
+    </string-array>
+    
+</resources>
