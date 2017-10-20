@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tesina 2016</string>
+    <string name="app_title_main">Negociación </string>
+    <string name="app_title_settings">Tesina 2017</string>    
+    <string name="app_title_chat">Jade Negotiation</string>    
+    <string name="app_title_participants">Jade Negotiation Participants</string>    
+
+    <string name="label_nick">Nombre de Usuario</string>
+    <string name="label_host">Dirección Ip del Host</string>
+    <string name="label_port">Puerto</string>
+    
+    <string name="button_login">  Comenzar A NeGoCiAr!  </string>
+    <string name="button_send">EnViAr!</string>
+    <string name="button_use">  Guardar  </string>
+
+    <string name="menu_settings">Configuración</string>
+    <string name="menu_exit">Salir -)</string>
+    <string name="menu_participants">Usuarios Conectados</string>
+    <string name="menu_clear">clear</string>
+    
+    <string name="msg_connecting_to">Conectandose a:</string>
+    <string name="msg_nickname_in_use">Nombre de Usuario ya en uso!</string>
+    <string name="msg_nickname_not_valid">Nombre de Usuario NO vAlIdO!</string>
+    <string name="msg_unexpected">Unexpected error!</string>
+    
+    <string name="msg_interface_exc">Internal error!</string>
+    <string name="msg_controller_exc">Server error!</string>
+</resources>

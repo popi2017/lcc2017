@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ANALIZAR LUEGO COMO se una el spinnerBuilder del BaseActivity para poder crear mis propios Spinners -->
+    <string-array name="spinnerTipoComidaValues">
+        <item>0|[Seleccione Tipo De ComiDa]</item>
+        <item>1|Vegetariano</item>
+        <item>2|Carne</item>
+        <item>3|Pizza</item>
+        <item>4|Pastas</item>
+    </string-array>
+
+        <string-array name="spinnerPrecioValues">
+        <item>0|[Seleccione su respuesta]</item>
+        <item>80|80</item>
+        <item>120|120 </item>
+        <item>140|140</item>
+        <item>180|180</item>
+        <item>200|200 </item>
+        <item>210|210  </item>
+        <item>230|230 </item>
+        <item>400|400 </item>
+    </string-array>
+    
+    <string-array name="spinnerEstacionamientoValues">
+        <item>0|[Seleccione su respuesta]</item>
+        <item>2|Si</item>
+        <item>1|No</item>	
+    </string-array>
+
+        <string-array name="spinnerBarrioValues">
+        <item>0|[Seleccione su respuesta]</item>
+        <item>1|Parque España</item>
+        <item>2|Centro</item>	
+        <item>3|Pichincha</item>
+        <item>4|Fluvial</item>
+        <item>5|Costanera</item>
+        <item>6|Zona Norte</item>
+        <item>7|Zona Sur</item>	
+        <item>998|[Me da lo mismo cualquier barrio]</item>
+    </string-array>
+    
+</resources>

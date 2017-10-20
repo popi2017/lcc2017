@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backlcc"
+    android:orientation="vertical" >
+
+
+    <ScrollView
+        android:id="@+id/scroller"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+ 
+       		<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_margin="10dp"
+                android:textColor="@color/negro"
+                android:text="Horario de la posible reserva:"
+                android:visibility="gone" />
+        			           
+                <LinearLayout
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:layout_marginBottom="5dp"
+        			android:layout_marginLeft="0dp"
+        			android:layout_marginRight="0dp"
+        			android:layout_marginTop="5dp"
+        			android:weightSum="10"
+        			android:orientation="horizontal" >
+
+        			<Button
+            			android:id="@+id/btDate"
+            			android:layout_width="wrap_content"
+            			android:layout_height="wrap_content"
+            			android:layout_marginLeft="0dp"
+            			android:drawableRight="@android:drawable/ic_menu_today"
+            			android:gravity="center_vertical"
+            			android:onClick="DoSetDate"
+            			android:paddingLeft="0dp"
+            			android:paddingRight="0dp"
+            			android:text="Seleccionar"
+            			android:textColor="@color/gris_oscuro"
+            			android:background="@drawable/custom_button_celestito"
+            			android:visibility="gone"
+           		 		android:textSize="20sp" />
+
+        			
+        			<Button
+            			android:id="@+id/btTime"
+            			android:layout_width="fill_parent"
+            			android:layout_height="50dp"
+            			android:layout_marginLeft="5dp"
+            			android:layout_marginRight="5dp"
+            			android:drawableLeft="@drawable/logocalendarsm"
+            			android:onClick="DoSetTime"
+            			android:text="Seleccionar"
+            			android:textColor="@color/blanco"
+            			android:background="@drawable/custom_button_celestito"
+            			android:layout_weight="10"
+            			android:adjustViewBounds="true"
+        				android:padding="5dp"
+        				android:scaleType="fitCenter"
+        				android:visibility="gone"
+            			android:textSize="30sp" />
+    		</LinearLayout>
+            
+   <TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/gris_oscuro"
+    android:text="Compartir Dato sobre el Menu:"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="5dp"
+    android:textSize="18sp"/>
+   
+   
+           <RadioGroup
+        android:id="@+id/radioGroupTipoComida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="15"
+ 	 >
+
+        <RadioButton
+            android:id="@+id/rdTipoComida_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:layout_weight="5"
+            android:textColor="@color/gris_azulado"
+            android:text="Siempre" />
+
+        <RadioButton
+            android:id="@+id/rdTipoComida_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:textColor="@color/gris_azulado"
+            android:text="Si es pedido" />
+
+        <RadioButton
+            android:id="@+id/rdTipoComida_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:textColor="@color/gris_azulado"
+            android:text="Nunca" />
+    </RadioGroup>
+
+  
+  <TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/gris_oscuro"
+    android:text="Compartir Dato sobre el Barrio:"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="5dp"
+    android:textSize="18sp"/>
+				
+  <RadioGroup
+        android:id="@+id/radioGroupBarrio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="15"
+ 	 >
+
+        <RadioButton
+            android:id="@+id/rdBarrio_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:layout_weight="5"
+            android:textColor="@color/gris_oscuro"
+            android:text="Siempre" />
+
+        <RadioButton
+            android:id="@+id/rdBarrio_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:textColor="@color/gris_oscuro"
+            android:text="Si es pedido" />
+
+        <RadioButton
+            android:id="@+id/rdBarrio_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:textColor="@color/gris_azulado"
+            android:text="Nunca" />
+    </RadioGroup>
+  
+  
+  
+  <TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/gris_oscuro"
+    android:text="Compartir Dato sobre Estacionamiento:"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+    android:textSize="18sp"/>
+				
+  <RadioGroup
+        android:id="@+id/radioGroupEstacionamiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="15"
+ 	 >
+
+        <RadioButton
+            android:id="@+id/rdEstacionamiento_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:layout_weight="5"
+            android:textColor="@color/gris_azulado"
+            android:text="Siempre" />
+
+        <RadioButton
+            android:id="@+id/rdEstacionamiento_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:textColor="@color/gris_azulado"
+            android:text="Si es pedido" />
+
+        <RadioButton
+            android:id="@+id/rdEstacionamiento_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:textColor="@color/gris_azulado"
+            android:text="Nunca" />
+    </RadioGroup>
+                
+        			
+            <TextView
+                android:id="@+id/labelTipoComida"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/negro"
+                android:text="Tipo De Comida" />
+            
+        
+         <Spinner
+                android:id="@+id/spinnerTipoComida"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:spinnerMode="dropdown" 
+                android:background="@drawable/spinner_v11"
+                />
+
+            <TextView
+                android:id="@+id/labelPrecio"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/negro"
+                android:text="Precio Máximo Dispuesto a Pagar" />
+            
+
+         <Spinner
+                android:id="@+id/spinnerPrecio"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:background="@drawable/spinner_v11"
+                />
+            
+            <TextView
+                android:id="@+id/tvPatente"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/negro"
+                android:text="SIN USO POR AHORA"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/etPatente"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+            
+            <TextView
+                android:id="@+id/tvEstacionamiento"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/negro"
+                android:text="Necesita estacionamiento?" />
+			
+            <Spinner
+                android:id="@+id/spinnerEstacionamiento"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:background="@drawable/spinner_v11" />
+            
+           <TextView
+                android:id="@+id/tvBarrio"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/negro"
+                android:text="Barrio que desea buscar reserva:" />
+           
+            <Spinner
+                android:id="@+id/spinnerBarrio"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:background="@drawable/spinner_v11" />
+            
+            
+               <TextView
+        android:id="@+id/tvRestoPreferido"
+            android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/negro"
+        android:text="Cual es su restaurante preferido?" 
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/etDescripcion"
+        android:background="@drawable/edittextstyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="5dp"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:maxLength="500"
+        android:textSize="20sp"
+        android:textColor="@color/negro"
+        android:visibility="gone"
+        android:text="" />
+            
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/btSiguiente"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/custom_button_celestito"
+        android:onClick="DoContinue"
+        android:src="@drawable/logoavanzargris"
+        android:adjustViewBounds="true"
+        android:padding="5dp"
+        android:scaleType="fitCenter"
+        android:text="Continuar" />
+</LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

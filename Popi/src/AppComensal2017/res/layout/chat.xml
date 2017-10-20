@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_height="fill_parent"
+	android:layout_width="fill_parent"
+	android:background="@drawable/backlcc">
+	
+            <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+       			           
+   		<TextView
+                android:id="@+id/tvMasInfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryLight"
+                android:textSize="20sp"
+                android:visibility="gone"
+                android:text="Por favor para continuar proporcione la información solicitada:" />
+                
+            <TextView
+                android:id="@+id/tvTipoComida"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/negro"
+                android:visibility="gone"
+                android:text="Tipo De Comida" />
+
+            <Spinner
+                android:id="@+id/spinnerTipoComida"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:spinnerMode="dropdown"
+                android:visibility="gone" 
+                android:background="@drawable/spinner_v11"
+                />
+
+            <TextView
+                android:id="@+id/tvPrecio"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/negro"
+                android:visibility="gone"
+                android:text="Precio Máximo Dispuesto a Pagar" />
+
+            <Spinner
+                android:id="@+id/spinnerPrecio"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:visibility="gone"
+                android:background="@drawable/spinner_v11"
+                />
+            
+            
+            <TextView
+                android:id="@+id/tvEstacionamiento"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/negro"
+                android:visibility="gone"
+                android:text="Necesita estacionamiento?" />
+
+            <Spinner
+                android:id="@+id/spinnerEstacionamiento"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:visibility="gone"
+                android:background="@drawable/spinner_v11" />
+            
+
+           <TextView
+                android:id="@+id/tvBarrio"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/negro"
+                android:visibility="gone"
+                android:text="Barrio que desea buscar reserva:" />
+            <Spinner
+                android:id="@+id/spinnerBarrio"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:visibility="gone"
+                android:background="@drawable/spinner_v11" />
+            
+            
+    <ImageButton
+        android:id="@+id/btSiguiente"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/custom_button_celestito"
+        android:onClick="DoContinue"
+        android:src="@drawable/logoavanzargris"
+        android:adjustViewBounds="true"
+        android:padding="5dp"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        android:text="Continuar" />
+        </LinearLayout>
+    
+    
+            
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:weightSum="10" >
+        <Button
+            android:id="@+id/btDate"
+            style="@android:style/Widget.Button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:drawableRight="@android:drawable/ic_menu_today"
+            android:gravity="center"
+            android:onClick="DoSetDate"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="selECCIONAR"
+            android:background="@drawable/custom_button_celestito"
+            android:textColor="@color/blanco"
+            android:layout_weight="5"
+            android:visibility="gone"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btTime"
+            style="@android:style/Widget.Button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/custom_button_celestito"
+            android:textColor="@color/blanco"
+            android:drawableRight="@android:drawable/ic_menu_recent_history"
+            android:gravity="center"
+            android:onClick="DoSetTime"
+            android:text="SELECCIONAR"
+            android:layout_weight="5"
+            android:visibility="gone"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+        
+	<ScrollView android:layout_marginBottom="50dip" android:id="@+id/scroller"
+		android:layout_height="fill_parent" android:layout_width="fill_parent">
+		<TextView android:id="@+id/chatTextView"
+			android:paddingBottom="8dip" android:layout_width="fill_parent"
+			android:textColor="@color/gris_similar_default"
+			android:layout_height="fill_parent" />
+	</ScrollView>
+	<RelativeLayout android:layout_marginTop="-50dip"
+		android:gravity="bottom" android:layout_height="wrap_content"
+		android:layout_width="fill_parent">
+		<Button 
+		    android:text="@string/button_send" 
+		    android:id="@+id/button_send"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:background="@drawable/custom_button_round"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentRight="true"
+			android:visibility="gone">
+		</Button>
+
+		<EditText android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_toLeftOf="@id/button_send"
+			android:layout_alignParentBottom="true" android:id="@+id/edit_message"
+			android:visibility="gone"
+			>
+		</EditText>
+	</RelativeLayout>
+</LinearLayout>

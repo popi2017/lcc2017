@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/loginlcc02" 
+	android:gravity="center"
+	android:weightSum="1">
+
+    	
+<!-- 	<TextView  -->
+<!-- 	    android:layout_width="fill_parent" -->
+<!-- 		android:layout_height="wrap_content"  -->
+<!-- 		android:textSize="20sp" -->
+<!-- 		android:text="@string/label_nick" /> -->
+	
+	<EditText 
+	    android:layout_height="60dp"
+		android:layout_width="360dp"
+		android:hint="@string/label_nick" 
+		android:id="@+id/edit_nickname">
+		<requestFocus></requestFocus>
+	</EditText>
+	
+	<Button 
+	    android:layout_width="wrap_content"
+	    android:layout_height="110dp"
+		android:layout_gravity="center_horizontal" 
+		android:text=""
+		android:layout_marginTop="25dp"
+		android:drawableLeft="@drawable/logostartgrissm"
+		android:background="@drawable/custom_button"
+		android:adjustViewBounds="true"
+        android:padding="5dp"
+        android:scaleType="fitCenter"
+		android:id="@+id/button_chat">
+	</Button>
+	
+	<TextView 
+	    android:layout_height="wrap_content" 
+	    android:id="@+id/infoTextView"
+		android:layout_width="wrap_content" 
+		android:layout_gravity="bottom"
+		android:text="info">
+	</TextView>
+	
+</LinearLayout>

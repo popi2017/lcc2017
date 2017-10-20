@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scroller"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvNombre"
+                android:layout_marginTop="10dp"
+                android:text="Calle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/etCalle"
+                android:imeOptions="actionNext"
+                android:inputType="textCapSentences"
+                android:maxLength="25"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10.0" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                    android:id="@+id/tvAltura"
+                    android:layout_weight="3.0"
+                    android:text="Altura" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                    android:id="@+id/tvLetra"
+                    android:text="Letra"
+                    android:layout_weight="3.5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                    android:id="@+id/tvBis"
+                    android:layout_weight="3.5"
+                    android:text="Bis"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10.0" >
+
+                <EditText
+                    android:layout_width="fill_parent"
+                	android:layout_height="wrap_content"
+                    android:id="@+id/etAltura"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="3.0"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:textSize="16sp" />
+
+                <EditText
+                 	android:layout_height="wrap_content"
+                    android:id="@+id/etLetra"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="3.5"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences"
+                    android:maxLength="1"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/cbBis"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_weight="3.5" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvInteseccion"
+                android:text="Interseccion" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10.0" >
+
+                <AutoCompleteTextView
+                    android:id="@+id/etInterseccion"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:imeOptions="actionDone"
+                    android:inputType="textCapSentences"
+                    android:minWidth="2400dp"
+                    android:maxLength="25"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="7.5"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp">
+
+                <ImageButton
+                    android:id="@+id/btBrujula"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon"
+                    android:layout_marginRight="5dp"
+                    android:onClick="DoPosition"
+                    android:visibility="visible" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/icon__"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:visibility="gone"
+                android:layout_marginTop="8dp"/>
+
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:orientation="vertical"  >
+
+                <org.osmdroid.views.MapView
+                    android:id="@+id/mapview"
+                    android:minHeight="200dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="70dp"
+                    android:layout_marginTop="10dp"
+
+                    android:focusable="false"
+                    android:visibility="visible"
+                    tilesource="Mapnik" />
+
+                <Button
+                    android:layout_width="fill_parent"
+                	android:layout_height="wrap_content"
+                    android:id="@+id/btSiguiente"
+                    android:layout_gravity="bottom"
+                    android:onClick="DoContinue"
+                    android:text="Continuar" />
+
+
+            </FrameLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
