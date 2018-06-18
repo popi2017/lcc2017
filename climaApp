@@ -1,0 +1,11 @@
+Readme
+
+Debido a que justo el servidor web no permitia acceso se uso uno del servicio meteorologico nacional que en vez de un json devolvia un 
+arrelgo de jsons, los cuales despues en base a la latitud y longitud obtenida se filtra de ese arreglo de json obtenidos para obtener
+los datos de dicho lugar, por una cuestion de que solo es para la argentina se en el archivo ServicioRest se comentaron las lineas 53 y 54
+para harcodear la latitud y longitud de alguna zona que estuviera seguro en los resultados obtenidos.
+
+Las lineas en cuestion son             //coordenadaLat = intent.getStringExtra("coordenadaLat");
+                                       // coordenadaLong = intent.getStringExtra("coordenadaLong");
+                                       
+                                       del archivos ServicioRest.java
